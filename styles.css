@@ -100,7 +100,7 @@ h1 {
     margin-bottom: 100px;
 }
 
-@media (min-width: 560px) {
+/* @media (min-width: 560px) {
 
     .box {
         flex-direction: row-reverse;
@@ -111,5 +111,43 @@ h1 {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
+    img {
+        display: none;
+    }
+
+    .img-box {
+        background-image: url("img/image-header-desktop.jpg");
+        width: 50rem;
+        display: flex;
+        height: 50rem;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
     
+} */
+
+@media (min-width: 560px) {
+    .box {
+        flex-direction: row-reverse;
+    }
+
+    img {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .img-box {
+        background-image: url("img/image-header-desktop.jpg");
+        width: 100%;
+        height: 100rem;
+        display: flex;
+        object-fit: contain;
+    }
 }
