@@ -130,24 +130,17 @@ h1 {
 
 @media (min-width: 560px) {
     .box {
+        display: flex;
         flex-direction: row-reverse;
     }
 
     img {
-        display: none;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
         background-size: cover;
         background-repeat: no-repeat;
 
     }
-
-    .img-box {
-        background-image: url("img/image-header-desktop.jpg");
-        width: 100%;
-        height: 100rem;
-        display: flex;
-        object-fit: contain;
-    }
 }
+   
